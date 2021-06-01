@@ -1,0 +1,134 @@
+sdada
+?binom.test
+binom.test(5,18)
+?wilcox.test
+?kluskal.test
+?kruskal.test
+boxplot(Ozone ~ Month, data = airquality)
+?kruskal.test
+kruskal.test(Ozone ~ Month, data = airquality)
+res =kruskal.test(Ozone ~ Month, data = airquality)
+res
+TukeyHSD(res)
+res =aov(Ozone ~ Month, data = airquality)
+TukeyHSD(res)
+summary(res)
+res =aov(Ozone ~ as.factor(Month), data = airquality)
+summary(res)
+TukeyHSD(res)
+boxplot(Ozone ~ as.factor(Month), data = airquality)
+res =kruskal.test(Ozone ~ as.factor(Month), data = airquality)
+prin(res)
+res
+summary(res)
+TukeyHSD(res)
+?kruskal.test
+boxplot(Ozone ~ Month, data = airquality)
+kruskal.test(Ozone ~ Month, data = airquality)
+?binom.test
+binom.test(682, 682 + 243, p = 3/4)
+?wilcox.test
+?binom.test()
+?wilcox.test
+?kruskal.test
+?friedman.test
+RoundingTimes <-#
+matrix(c(5.40, 5.50, 5.55,#
+         5.85, 5.70, 5.75,#
+         5.20, 5.60, 5.50,#
+         5.55, 5.50, 5.40,#
+         5.90, 5.85, 5.70,#
+         5.45, 5.55, 5.60,#
+         5.40, 5.40, 5.35,#
+         5.45, 5.50, 5.35,#
+         5.25, 5.15, 5.00,#
+         5.85, 5.80, 5.70,#
+         5.25, 5.20, 5.10,#
+         5.65, 5.55, 5.45,#
+         5.60, 5.35, 5.45,#
+         5.05, 5.00, 4.95,#
+         5.50, 5.50, 5.40,#
+         5.45, 5.55, 5.50,#
+         5.55, 5.55, 5.35,#
+         5.45, 5.50, 5.55,#
+         5.50, 5.45, 5.25,#
+         5.65, 5.60, 5.40,#
+         5.70, 5.65, 5.55,#
+         6.30, 6.30, 6.25),#
+       nrow = 22,#
+       byrow = TRUE,#
+       dimnames = list(1 : 22,#
+                       c("Round Out", "Narrow Angle", "Wide Angle")))
+RoundingTime
+RoundingTimes
+wb <- aggregate(warpbreaks$breaks,#
+                by = list(w = warpbreaks$wool,#
+                          t = warpbreaks$tension),#
+                FUN = mean)
+wb
+2350*140/7
+https://cran.r-project.org/web/packages/easyPubMed/vignettes/getting_started_with_easyPubMed.html
+install.packages("easyPubMed")
+library(easyPubMed)
+my_query <- 'magnetic resonance'
+my_entrez_id <- get_pubmed_ids(my_query)
+my_entrez_id
+my_abstracts_txt <- fetch_pubmed_data(my_entrez_id, format = "abstract")
+my_abstracts_txt
+? grep
+grep('TITLE', )
+my_abstracts_txt
+grep('TITLE', my_abstracts_txt)
+grep('title', my_abstracts_txt)
+grep('vas', my_abstracts_txt)
+grep('tit', my_abstracts_txt)
+tt <- grep('vas', my_abstracts_txt)
+my_abstracts_txt[tt]
+head(my_abstracts_txt)
+head(my_abstracts_txt, 100)
+getwd()
+library(ggplot2)
+install.packages('ggplot2')
+library(ggplot2)
+mpg
+ggplot(mpg, aes(x = displ, y = hwy)) + #
+geom_point()
+source('e2.R')
+source('e2.R')
+source('e2.R')
+source('e2.R')
+source('e3.R')
+source('e3.R')
+source('e3.R')
+source('e3.R')
+source('e3.R')
+source('e3.R')
+source('e3.R')
+source('e3.R')
+source('e3.R')
+source('e4.R')
+source('e4.R')
+source('e4.R')
+source('e4.R')
+source('e4.R')
+source('e4.R')
+source('e4.R')
+source('e4.R')
+source('e4.R')
+source('e4.R')
+source('e4.R')
+source('e4.R')
+source('e4.R')
+source('e5.R')
+source('a6.R')
+source('a6.R')
+source('a6.R')
+source('a6.R')
+source('e7.R')
+source('e7.R')
+source('e7.R')
+source('e7.R')
+source('e7.R')
+source('e7.R')
+source('e7.R')
+source('e7.R')
