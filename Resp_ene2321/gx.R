@@ -9,6 +9,6 @@ gx <- function(x=0, u=0, p=0){
 	}
 	A = matrix(c(1 - 0.4 * u, -x[1], -x[2], 1 + 0.2*u), ncol=2)
 	B = matrix(c(1, p[1], -p[2], 1), ncol=2) 
-	res = A %*% p + B %*% x + c(-1,0)
+	res =  A %*% p  +  B %*% x + c(-1,0)
 }
 

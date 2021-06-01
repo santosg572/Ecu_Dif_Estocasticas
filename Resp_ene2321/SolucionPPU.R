@@ -13,7 +13,8 @@ SolucionPPU <- function(del=0, xx=0, uu=0){
 	w2 = dwp[n]
 	x2 = xx[n,]	
 	for (i in (n-1):1){
-		p1 = p2 - del * gx(x2, u2, p2) - w2*gw(p2)
+		gg = gx(x2, u2, p2)
+		p1 = p2 - del * gg - w2*gw(p2)
 		pp[i,] = p1
 		p2 = p1
 		u2 = uu[i,]

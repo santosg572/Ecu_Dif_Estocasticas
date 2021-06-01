@@ -1,18 +1,15 @@
 SolucionXPU <- function(del=0, pp=0){
    ss = dim(pp)
-   cat('dim(pp) ', ss, '\n')
+
    n = ss[1]
 
    xx = matrix(rep(0,2*n), ncol=2)
 
-   dwx1 = 0 * sqrt(del)*rnorm(n)
-   dwx2 = 0*sqrt(del)*rnorm(n)
-   
-   xx[1,] = c(.5, .7)
+   dwx1 = 0 *sqrt(del)*rnorm(n)
+   dwx2 = 0 *sqrt(del)*rnorm(n)
 
-   	x1 = xx[1,]
+   	x1 = c(.5, .7)
 	p1 = pp[1,]
-	w1 = dwx1[1]
 	w2 = dwx2[1]
 	u1 = Calu(x1, p1)
 	
@@ -33,11 +30,16 @@ SolucionXPU <- function(del=0, pp=0){
    for (i in 1:n){
    		pi = pp[i,]
    		xi = xx[i,]
-	    u1 = -.4*pi[i]* xi[i]
-        u2 = -.2*pi[i]* xi[i]
+	    u1 = -.4*pi[1]*xi[1]
+        u2 = -.2*pi[2]*xi[2]
         uu[i, ] = c(u1,u2)
    }
    
+#   print('--------- xx -------------')
+#   print(xx)
+#   print('--------- uu -------------')
+#   print(uu)
+  
    res = list(xx=xx, uu=uu)
 }
 
